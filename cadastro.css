@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ropa Sans', sans-serif;
+  letter-spacing: 1px;
 } 
 
 body{
@@ -23,7 +25,7 @@ body{
   align-items: center;
   flex-direction: column;
   background-color: #242741;
-  width: 500px;
+  width: 375px;
   height: 550px;
   padding: 35px;
   border-radius: 10px;
@@ -53,13 +55,27 @@ height: auto;
 }
 
 input::placeholder{
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .dados-cadastro [type="submit"]{
   background-color: #fbbe28;
   display: block;
   font-size: 20px;
+  color: #242741;
   font-weight: bold;
   cursor: pointer;
- }
+}
+
+.lembrar {
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  font-size: 18px;
+  gap: 5px;
+  color: #fbbe28;
+}
+
+.lembrar input{
+  height: 20px;
+}

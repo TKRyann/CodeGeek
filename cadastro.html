@@ -17,15 +17,18 @@
             </div>
 
             <form class="dados-cadastro">
-                <input type="text" name="nome" placeholder="Nome de Usuário" required autofocus>
+                <input type="text" name="nome" id="nome" placeholder="Usuário" required autofocus>
 
-                <input type="email" name="email" placeholder="Sua E-mail" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
                 
-                <input type="password" name="senha" placeholder="Sua Senha" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
 
-                <input type="password" name="senha-confirmar" placeholder="Confirmar Senha" required>
+                <div class="lembrar">
+                    <input type="checkbox" id="lembrar" name="lembrar" value="Lembrar">
+                    <label for="lembrar">Lembrar</label>
+                </div>
 
-                <input type="submit" value="Criar">
+                <input type="submit" value="Criar" id="criar">
             </form>
 
         </div>
