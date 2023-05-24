@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ropa Sans', sans-serif;
+  letter-spacing: 1px;
 } 
 
 body{
   background-color:#1B1f27;
-  font-family: Arial, Helvetica, sans-serif;
 } 
 
 .area-login{
@@ -45,6 +46,7 @@ body{
   height: 45px;
   outline: none;
   border-radius: 8px;
+  font-size: 14px;
 } 
 
 .login .senha input{
@@ -63,23 +65,51 @@ body{
 }
 
 input::placeholder{
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .dados-login [type="submit"]{
   background-color: #fbbe28;
   display: block;
+  color: #242741;
+  text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-} 
+}
 
-.cadastro{
+.lembrar {
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.lembrar input{
+  height: 20px;
+}
+
+.lembrar .checkbox{
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 5px;
+  color: #fbbe28;
+  font-size: 18px;
+}
+
+.lembrar p a{
+  color: #fbbe28;
+}
+
+.fazer-cadastro{
   margin-top: 10px;
   color: aliceblue;
 }
 
-.cadastro a{
+.fazer-cadastro a{
   color: #fbbe28;
   text-decoration: none;
 }
