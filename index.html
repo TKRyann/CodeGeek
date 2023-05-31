@@ -17,7 +17,7 @@
         <img src="img/LOGO.png" alt="logo da Code Geek">
       </div>
 
-      <form class="dados-login">
+      <form action="feed/index.html" class="dados-login">
         <input type="text" name="nome" id="nome" placeholder="Usuário" required autofocus >
 
         <input type="password" name="senha" id="senha" placeholder="Senha" required >
@@ -31,7 +31,7 @@
           <p class="esqueceu-usuario"><a href="#">Esqueceu a senha?</a></p>
         </div>
 
-        <input type="submit" id="bnt-login" value="Login">
+        <input type="submit" id="bnt-login" value="Login" onclick="validarUsuario()">
       </form>
 
       <p class="fazer-cadastro">Ainda não tem uma conta?<a href="cadastro.html"> Crie uma conta</a></p>

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --laranja: #f6511d;
+    --preto: #1B1f27;
+    --branco: #f7ede2;
+}
+
+body {
+    background-color: var(--preto);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: " options posts chat ";
+    justify-content: center;
+}
+
+.user-options {
+    grid-area: options;
+}
+
+.content {
+    grid-area: posts;
+}
+
+.user-chat {
+    grid-area: chat;
+}
+
+
+
+/* Aqui fica o Header */
+
+.header {
+    height: 6rem;
+    width: 100%;
+    background-color:var(--branco);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo img{
+    height: 5rem;
+}
+
+.cabecalgo-input {
+    display: flex;
+}
+
+.header-input input {
+    height: 3.5rem;
+    width: 40rem;
+    padding: 1rem 4rem;
+    color: var(--branco);
+    background-color: var(--preto);
+    border: none;
+    border-radius: 1.8rem;
+    font-size: 1.6rem;
+}
+
+.header-input label img {
+    position: absolute;
+    height: 3.5rem;
+    padding: 0.7rem;
+}
+
+.user-profile img {
+    height: 5rem;
+    padding: 0.3rem;
+    border: 0.1rem solid var(--preto);
+    border-radius: 50%;
+}
+
+/* Aqui vai o Content */
+
+.content {
+    max-width: 63rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Aqui fica o Date-Post */
+
+.date-post{
+    background-color: var(--branco);
+    margin-top: 2rem;
+    padding: 0.8rem;
+    width: 90%;
+    border-radius: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.new-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.post-user img {
+    height: 5rem;
+    padding: 0.3rem;
+    border: 0.1rem solid var(--preto);
+    border-radius: 50%;
+}
+
+.post-input input{
+    height: 3.5rem;
+    width: 45rem;
+    padding: 1rem;
+    color: var(--branco);
+    background-color: var(--preto);
+    border: none;
+    border-radius: 1.8rem;
+    font-size: 1.6rem;
+}
+
+.post-divid {
+    width: 95%;
+    border-top: 0.2rem solid var(--preto);
+}
+
+.post-button-files {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post-button-files button{
+    margin-top: 0.7rem;
+    border: none;
+    background-color: var(--branco);
+    cursor: pointer;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Aqui fica o Global-Posts */
+
+.global-posts{
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.user-info {
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info img{
+    height: 5rem;
+    padding: 0.3rem;
+    border: 0.1rem solid var(--preto);
+    border-radius: 50%;
+}
+
+.content-post {
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-post img{
+    padding: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.global-posts .post-user-global {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+    background-color: var(--branco);
+}
+
+.btns-post {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.btn-post {
+    width: 14rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    background-color: var(--branco);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.btn-post:hover {
+    background-color: var(--laranja);
+}
+
+.btns-post img {
+    height: 3rem;
+}
