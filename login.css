@@ -9,9 +9,7 @@
 } 
 
 body{
-  background-image: url(particula\ dark.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color:#f7ede2;
 } 
 
 .area-login{
@@ -25,7 +23,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #11151c;
+  background-color: #12130f;
   width: 375px;
   height: 500px;
   padding: 35px;

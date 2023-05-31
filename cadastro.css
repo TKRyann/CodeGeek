@@ -9,8 +9,7 @@
 } 
 
 body{
-  background-color:#1B1f27;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color:#f7ede2
 } 
 
 .area-cadastro{
@@ -24,9 +23,9 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #242741;
+  background-color: #12130f;
   width: 375px;
-  height: 550px;
+  height: 500px;
   padding: 35px;
   border-radius: 10px;
 } 
@@ -35,9 +34,13 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+  margin-top: 48px;
 
 } 
+
+.cadastro img{
+  width: 250px;
+}
 
 .cadastro input{
   margin-top: 10px;
@@ -49,20 +52,15 @@ body{
   border-radius: 8px;
 } 
 
-.cadastro img{
-width: 200px;
-height: auto;
-}
-
 input::placeholder{
   font-size: 18px;
 }
 
 .dados-cadastro [type="submit"]{
-  background-color: #fbbe28;
+  background-color: #f6511d;
   display: block;
   font-size: 20px;
-  color: #242741;
+  color: #f7ede2;
   font-weight: bold;
   cursor: pointer;
 }
@@ -73,7 +71,7 @@ input::placeholder{
   align-content: center;
   font-size: 18px;
   gap: 5px;
-  color: #fbbe28;
+  color: #f7ede2;
 }
 
 .lembrar input{
