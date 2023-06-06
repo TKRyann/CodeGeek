@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=Ropa+Sans&display=swap');
+:root{
+--color-icon:#cc8c03;
+
+--color-dark:#333331fd;
+
+--color-letras-dark:#050505;
+
+--color-light:#d1cdcd;
+}
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ropa Sans', sans-serif;
+  letter-spacing: 1px;
+} 
+
+body{
+ background-color: var(--color-light);
+} 
+
+.area-login{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+} 
+
+.login img{
+  width: 200px;
+  height: auto;
+} 
+  #mode_icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+.login{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 375px;
+  height: 500px;
+  padding: 35px;;
+  border-radius: 0px 0px 113px 0px;
+  -webkit-border-radius: 0px 0px 113px 0px;
+  box-shadow: 10px 10px 16px 10px rgba(0,0,0,0.62);
+}
+
+.login form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  width: 100%;
+} 
+
+.login input{
+  margin-top: 10px;
+  padding-left: 10px;
+  border: none; 
+  height: 45px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 14px;
+} 
+
+.login .senha input{
+  margin-top: 10px;
+  padding-left: 10px;
+  border: none; 
+  height: 45px;
+  outline: none;
+  border-radius: 8px;
+}
+
+input::placeholder{
+  font-size: 18px;
+}
+
+.dados-login [type="submit"]{
+  background-color: #f6511d;
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #FBBE28;
+  transition: all 0.8s ease-in-out;
+}
+
+.lembrar {
+  
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.lembrar input{
+  height: 20px;
+}
+
+.lembrar .checkbox{
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--color-letras-dark);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lembrar p a{
+  color: var(--color-letras-dark);
+  font-weight: bold;
+
+}
+
+.fazer-cadastro{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-letras-light);
+}
+
+.fazer-cadastro a{
+  color: #fa8303e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover{
+    color: #cecdc9;
+    transition:all 0.8s ease-in-out;
+  } 
+
+  .dark#login_form {
+    color: var(--color-icon);
+    background-color: var(--color-dark);
+    animation: light-to-dark-background 0.5s ease-in-out;
+  }
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color:var(--color-light);
+    }
+    100.0% {
+        background-color:var(--color-dark); 
+    }
+}
