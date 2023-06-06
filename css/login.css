@@ -33,10 +33,16 @@ body{
   width: 200px;
   height: auto;
 } 
-  #mode_icon {
-    cursor: pointer;
-    font-size: 20px;
+
+#mode_icon {
+  cursor: pointer;
+  font-size: 20px;
 }
+
+#login_form {
+  animation: dark-to-light-background 1.5s ease-in-out;
+}
+
 .login{
   display: flex;
   align-items: center;
@@ -142,17 +148,26 @@ a:hover{
     transition:all 0.8s ease-in-out;
   } 
 
-  .dark#login_form {
-    color: var(--color-icon);
-    background-color: var(--color-dark);
-    animation: light-to-dark-background 0.5s ease-in-out;
-  }
+.dark#login_form {
+  color: var(--color-icon);
+  background-color: var(--color-dark);
+  animation: light-to-dark-background 0.5s ease-in-out;
+}
 
 @keyframes light-to-dark-background {
     0% {
         background-color:var(--color-light);
     }
-    100.0% {
+    100% {
         background-color:var(--color-dark); 
     }
+}
+
+@keyframes dark-to-light-background {
+  0% {
+      background-color:var(--color-dark);
+  }
+  100% {
+      background-color:var(--color-light); 
+  }
 }
