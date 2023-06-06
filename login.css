@@ -131,3 +131,8 @@ input::placeholder{
   color: #f7ede2;
   text-decoration: none;
 }
+
+a:hover{
+    color: #FBBE28;
+    transition: 0.8s;
+  }
