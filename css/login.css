@@ -29,15 +29,24 @@ body{
   
 } 
 
-.login img{
-  width: 200px;
-  height: auto;
-} 
+.dark-light-btn {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end;
+}
 
 #mode_icon {
+  position: absolute;
   cursor: pointer;
   font-size: 20px;
 }
+
+.login img{
+  width: 200px;
+  height: auto;
+}
+
 
 #login_form {
   animation: dark-to-light-background 1.5s ease-in-out;

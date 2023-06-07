@@ -27,7 +27,11 @@ background-color: var(--color-light);
   height: 100vh;
   justify-content: center;
   align-items: center;
-} 
+}
+
+#cadastro_form {
+  animation: dark-to-light-background 1.5s ease-in-out;
+}
 
 .cadastro{
   display: flex;
@@ -47,15 +51,23 @@ background-color: var(--color-light);
   width: 100%;
   margin-top: 48px;
 
-} 
+}
 
-.cadastro img{
-  width: 250px;
+.dark-light-btn {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 #mode_icon {
+  position: absolute;
   cursor: pointer;
   font-size: 20px;
+}
+
+.cadastro img{
+  width: 200px;
 }
 
 .cadastro input{
@@ -98,5 +110,14 @@ input::placeholder{
   }
   100.0% {
       background-color:var(--color-dark); 
+  }
+}
+
+@keyframes dark-to-light-background {
+  0% {
+      background-color:var(--color-dark);
+  }
+  100% {
+      background-color:var(--color-light); 
   }
 }
