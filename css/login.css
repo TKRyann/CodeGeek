@@ -179,4 +179,15 @@ a:hover{
   100% {
       background-color:var(--color-light); 
   }
+} 
+
+@media screen and (max-width: 375px){
+.login{
+  width: 300px;
+  padding: 25px;
+}
+.login input{
+  margin-top: 15px;
+  font-size: 18px;
+}
 }

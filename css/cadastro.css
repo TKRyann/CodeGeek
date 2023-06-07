@@ -121,3 +121,14 @@ input::placeholder{
       background-color:var(--color-light); 
   }
 }
+
+@media screen and (max-width: 375px){
+  .cadastro{
+    width: 300px;
+    padding: 25px;
+  }
+  .cadastro input{
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  }
