@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=Ropa+Sans&display=swap');
 
 :root{
+  font-size: 62.5%;
+
   --color-icon:#cc8c03;
   
   --color-dark:#333331fd;
@@ -15,7 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ropa Sans', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
 } 
 
 body{
@@ -37,19 +39,19 @@ background-color: var(--color-light);
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 375px;
-  height: 500px;
-  padding: 35px;
-  border-radius: 0px 0px 113px 0px;
-  -webkit-border-radius: 0px 0px 113px 0px;
-  box-shadow: 10px 10px 16px 10px rgba(0,0,0,0.62);
+  width: 37.5rem;
+  height: 50rem;
+  padding: 3.5rem;
+  border-radius: 0rem 0rem 11.3rem 0rem;
+  -webkit-border-radius: 0rem 0rem 11.3rem 0rem;
+  box-shadow: 1rem 1rem 1.6rem 1rem rgba(0,0,0,0.62);
 } 
 
 .cadastro form{
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 48px;
+  margin-top: 4.8rem;
 
 }
 
@@ -63,31 +65,31 @@ background-color: var(--color-light);
 #mode_icon {
   position: absolute;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .cadastro img{
-  width: 200px;
+  width: 20rem;
 }
 
 .cadastro input{
-  margin-top: 10px;
+  margin-top: 1rem;
   background-color:white;
-  padding-left: 10px;
+  padding-left: 1rem;
   border: none; 
-  height: 45px;
+  height: 4.5rem;
   outline: none;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 } 
 
 input::placeholder{
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .dados-cadastro [type="submit"]{
   background-color: #f6511d;
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   color: #f7ede2;
   font-weight: bold;
   cursor: pointer;
@@ -108,6 +110,7 @@ input::placeholder{
   0% {
       background-color:var(--color-light);
   }
+  
   100.0% {
       background-color:var(--color-dark); 
   }
@@ -117,17 +120,19 @@ input::placeholder{
   0% {
       background-color:var(--color-dark);
   }
+
   100% {
       background-color:var(--color-light); 
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 37.5rem){
   .cadastro{
-    width: 300px;
-    padding: 25px;
+    width: 30rem;
+    padding: 2.5rem;
   }
+
   .cadastro input{
-    margin-top: 15px;
+    margin-top: 1.5rem;
   }
-  }
+}
