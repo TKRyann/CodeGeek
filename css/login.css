@@ -199,15 +199,15 @@ a:hover{
   }
 } 
 
-@media screen and (max-width: 37.5rem), (max-width:39rem){
+@media screen and (max-width: 375px), (max-width:390px){
   .login{
-    width: 30rem;
-    padding: 2.5rem;
+    width: 300px;
+    padding: 25px;
   }
 
   .login input{
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
-    padding-left: 1rem;
+    margin-top: 15px;
+    font-size: 18px;
+    padding-left: 10px;
   }
 }
