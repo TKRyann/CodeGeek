@@ -55,6 +55,15 @@ background-color: var(--color-light);
 
 }
 
+.logo {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  gap: 6rem;
+}
+
+
 .dark-light-btn {
   display: flex;
   position: relative;
