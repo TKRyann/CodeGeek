@@ -65,7 +65,7 @@ background-color: var(--color-light);
 #mode_icon {
   position: absolute;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .cadastro img{
@@ -110,7 +110,7 @@ input::placeholder{
   0% {
       background-color:var(--color-light);
   }
-  
+
   100.0% {
       background-color:var(--color-dark); 
   }
