@@ -123,8 +123,8 @@ input::placeholder{
 }
 
 .lembrar {
-  
   display: flex;
+  width: 100%;
   align-items: flex-end;
   align-content: center;
   justify-content: space-between;
@@ -199,15 +199,15 @@ a:hover{
   }
 } 
 
-@media screen and (max-width: 375px), (max-width:390px){
+@media screen and (max-width: 37.5rem), (max-width:39rem){
   .login{
-    width: 300px;
-    padding: 25px;
+    width: 30rem;
+    padding: 2.5rem;
   }
 
   .login input{
-    margin-top: 15px;
-    font-size: 18px;
-    padding-left: 10px;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
   }
 }
