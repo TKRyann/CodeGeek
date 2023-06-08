@@ -43,7 +43,7 @@ body{
 #mode_icon {
   position: absolute;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .login img{
@@ -140,14 +140,13 @@ input::placeholder{
 .lembrar p a{
   color: var(--color-letras-dark);
   font-weight: bold;
-
 }
 
 .fazer-cadastro{
   margin-top: 1rem;
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--color-letras-light);
+  color: var(--color-letras-dark);
 }
 
 .fazer-cadastro a{
@@ -165,6 +164,10 @@ a:hover{
   color: var(--color-icon);
   background-color: var(--color-dark);
   animation: light-to-dark-background 0.5s ease-in-out;
+}
+
+.dark#login_form .fazer-cadastro, .dark#login_form .lembrar .checkbox, .dark#login_form .lembrar p a {
+  color: var(--color-light);
 }
 
 @keyframes light-to-dark-background {
