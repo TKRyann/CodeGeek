@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="img/LOGO.png" alt="Logo">
+        </div>
+
+        <div class="header-input">
+            <label for="pesquisar"><img src="img/lupa.svg" alt="Lupa"></label>
+            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar no CodeGeek">
+        </div>
+
+        <div class="user-profile">
+            <img src="img/avatar.png" alt="Perfil do Usuário">
+            <a href="/profile.html" class="user-profile">Usuario</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="user-options">
+
+        </aside>
+
+        <main class="content">
+            <div class="date-post">
+                <div class="new-post">
+                    <div class="post-user">
+                        <img src="img/avatar.png" alt="">
+                    </div>
+                    <div class="post-input">
+                        <input type="text" placeholder="Publique algo novo" id="newPost">
+                    </div>
+                </div>
+
+                <span class="post-divid">
+
+                <div class="post-button-files">
+                    <button><img src="img/post-image.png" alt="Adicionar Imagem">Imagens</button>
+
+                    <button><img src="img/post-video.png" alt="Adicionar Video">Videos</button>
+                </div>
+            </div>
+
+            <div class="global-posts">
+                <article class="post-user-global">
+                    <header class="user-info">
+                        <img src="img/avatar.png" alt="">
+
+                        <div class="date-user-post">
+                            <span class="user-name">
+                                <strong>Usuário</strong>
+                            </span>
+                            <p class="post-hour">13hr</p>
+                        </div>
+                    </header>
+
+                    <main class="content-post">
+                        <img src="img/post-teste-image.jpg" alt="">
+                    </main>
+
+                    <footer class="btns-post">
+                        <button class="btn-post">
+                        <img src="img/curtir.png" alt="Curtir">Curtir</button>
+
+                        <button class="btn-post">
+                        <img src="img/comentar.png" alt="Comentar">Comentar</button>
+
+                        <button class="btn-post">
+                        <img src="img/compartilhar.png" alt="Compartilhar">Compartilhar</button>
+                    </footer>
+                </article>
+            </div>
+        </main>   
+
+        <aside class="user-chat">
+
+        </aside>
+    </div>
+</body>
+</html>
