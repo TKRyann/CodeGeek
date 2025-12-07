@@ -16,3 +16,17 @@ mode.addEventListener('click', () => {
 
     form.classList.remove('dark');
 });
+
+function validarUsuario(){
+    const nome = document.getElementById('nome');
+    const senha = document.getElementById('senha');
+
+    if(!nome || !senha) return true;
+
+    if(nome.value.trim() === '' || senha.value.trim() === ''){
+        alert('Por favor preencha usuário e senha.');
+        return false;
+    }
+
+    return true;
+}

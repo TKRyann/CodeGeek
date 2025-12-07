@@ -1,0 +1,178 @@
+/* ======= BASE ======= */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.light {
+    background: #f2f2f2;
+    color: #000;
+}
+
+/* ======= HEADER ======= */
+header {
+    background: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    background: #333;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header button:hover {
+    background: #444;
+}
+
+/* ======= CONTAINER ======= */
+.feed-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+/* ======= CAIXA DE PUBLICAR ======= */
+.post-box {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.post-box-header {
+    display: flex;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 90px;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+.publish-btn {
+    margin-top: 12px;
+    background: #0066ff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.publish-btn:hover {
+    background: #0052cc;
+}
+
+/* ======= POSTS ======= */
+.post {
+    background: #1a1a1a;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-author {
+    font-weight: bold;
+}
+
+.post-time {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.post-content {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    line-height: 22px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.post-actions button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.post-actions button:hover {
+    color: #fff;
+}
+
+/* ======= LIGHT MODE ======= */
+.light header {
+    background: #fff;
+    color: #000;
+}
+
+.light .post-box,
+.light .post {
+    background: #fff;
+    color: #000;
+}
+
+.light textarea {
+    background: #eee;
+    color: #000;
+    border: 1px solid #aaa;
+}
+
+.light .publish-btn {
+    background: #007bff;
+}
